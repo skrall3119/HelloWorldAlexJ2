@@ -10,12 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var textField: UITextField!
+    // MARK: Properties
+    @IBOutlet weak var textDisplay: UITextField!
     @IBOutlet weak var labelResult: UILabel!
     
-    
+    //MARK: Methods
     @IBAction func changeButton(_ sender: Any) {
-        labelResult.text = textField.text?.uppercased()
+        labelResult.text = textDisplay.text?.uppercased()
+        print(labelResult!)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
